@@ -1,8 +1,7 @@
-# VoiceEdge：i.MX6ULL 流式语音控制终端
+#i.MX6ULL 流式语音控制终端
 
-面向正点原子 ALPHA（NXP i.MX6ULL / Cortex-A7）的 Qt 5 嵌入式 Linux 项目骨架。工程通过讯飞语音听写 WebAPI 将麦克风 PCM 音频实时转成文字，再由本地指令解析器控制板载 LED；同时提供无需账号和硬件的演示模式，适合作为作品集继续迭代。
+面向正点原子 ALPHA（NXP i.MX6ULL / Cortex-A7）的 Qt 5 嵌入式 Linux 项目。工程通过讯飞语音听写 WebAPI 将麦克风 PCM 音频实时转成文字，再由本地指令解析器控制板载 LED；同时提供无需账号和硬件的演示模式.
 
-> 当前阶段：主要模块与文档已完成，尚未在开发板上交叉编译、联调或测量识别率。`94%` 是待实验验证的目标，不是当前结果。
 
 ## 已实现模块
 
@@ -59,7 +58,7 @@ simulate=true
 
 1. 在可执行文件旁创建 `config/voice_assistant.ini`，可直接复制 `config/voice_assistant.ini.example`。
 2. 设置 `runtime/mock_mode=false`。
-3. 不建议把密钥写入 Git；运行前设置环境变量：
+3. 不建议把密钥写入 Git, 运行前设置环境变量：
 
 ```bash
 export XFYUN_APP_ID='your-app-id'
@@ -87,7 +86,7 @@ export XFYUN_API_SECRET='your-api-secret'
 
 ## LED 板级适配
 
-正点原子 Qt 例程中的 ALPHA 板节点为：
+ Qt 例程中的 ALPHA 板节点为：
 
 ```text
 /sys/devices/platform/leds/leds/sys-led/brightness
@@ -146,4 +145,3 @@ make -j"$(nproc)"
 - 上传并发布热词，按固定数据集比较关键词准确率、指令成功率、CER 和 P95 延迟。
 - 增加蜂鸣器/继电器 GPIO、离线唤醒词、日志落盘与网络重连策略。
 
-求职项目的可据实描述与实测后模板见 [`docs/RESUME.md`](docs/RESUME.md)。
