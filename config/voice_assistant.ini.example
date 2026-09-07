@@ -1,0 +1,35 @@
+[runtime]
+# true: UI/command/LED demonstration without cloud credentials.
+# false: use the real iFLYTEK WebSocket service.
+mock_mode=true
+max_record_seconds=60
+
+[iflytek]
+endpoint=wss://iat-api.xfyun.cn/v2/iat
+# Prefer environment variables XFYUN_APP_ID, XFYUN_API_KEY and XFYUN_API_SECRET.
+app_id=
+api_key=
+api_secret=
+language=zh_cn
+accent=mandarin
+domain=iat
+dynamic_correction=true
+vad_eos_ms=3000
+frame_interval_ms=40
+
+[audio]
+device=
+sample_rate=16000
+channels=1
+sample_size=16
+
+[hardware]
+simulate=true
+led_name=sys-led
+led_brightness=/sys/devices/platform/leds/leds/sys-led/brightness
+led_trigger=/sys/class/leds/sys-led/trigger
+active_high=true
+
+[commands]
+userwords=config/userwords.txt
+

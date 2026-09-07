@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/defaults">
+        <file alias="voice_assistant.ini">../config/voice_assistant.ini.example</file>
+        <file alias="userwords.txt">../config/userwords.txt</file>
+        <file alias="style.qss">style.qss</file>
+    </qresource>
+</RCC>
+

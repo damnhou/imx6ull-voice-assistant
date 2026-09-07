@@ -1,0 +1,55 @@
+QWidget {
+    background: #10151f;
+    color: #ecf2ff;
+    font-family: "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+    font-size: 18px;
+}
+QFrame#headerCard, QFrame#contentCard, QFrame#controlCard {
+    background: #182131;
+    border: 1px solid #293750;
+    border-radius: 16px;
+}
+QLabel#titleLabel { font-size: 28px; font-weight: 700; color: #ffffff; }
+QLabel#stateBadge {
+    background: #26344c;
+    color: #9fc4ff;
+    border-radius: 12px;
+    padding: 7px 14px;
+    font-size: 15px;
+}
+QLabel#transcriptLabel {
+    background: transparent;
+    color: #ffffff;
+    font-size: 27px;
+    padding: 14px;
+}
+QLabel#hintLabel { color: #8ea0ba; font-size: 14px; }
+QPushButton {
+    min-height: 54px;
+    border: 0;
+    border-radius: 13px;
+    background: #2a3953;
+    padding: 0 22px;
+}
+QPushButton:hover { background: #344866; }
+QPushButton:pressed { background: #213049; }
+QPushButton#recordButton { background: #3478f6; font-weight: 700; }
+QPushButton#recordButton:checked { background: #e15361; }
+QPushButton#ledButton:checked { background: #1d9c72; }
+QProgressBar {
+    min-height: 10px;
+    max-height: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #26344c;
+}
+QProgressBar::chunk { border-radius: 5px; background: #4fa2ff; }
+QPlainTextEdit {
+    background: #0d121b;
+    border: 1px solid #293750;
+    border-radius: 10px;
+    color: #9eafc7;
+    font-size: 13px;
+    padding: 8px;
+}
+

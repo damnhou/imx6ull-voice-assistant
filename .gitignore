@@ -1,0 +1,11 @@
+build-*/
+*.user
+*.user.*
+*.o
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+Makefile
+voice_assistant.ini
+recordings/
+
